@@ -8,8 +8,8 @@ MAINTAINER Juan Marin Otero <juan.marin.otero@gmail.com>
 # Update base image
 RUN yum -y update; yum clean all
 RUN yum -y install wget
-RUN wget http://dl.fedoraproject.org/pub/epel/beta/7/x86_64/epel-release-7-0.2.noarch.rpm 
-RUN rpm -ivh epel-release-7-0.2.noarch.rpm
+RUN wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-2.noarch.rpm
+RUN rpm -ivh epel-release-7-2.noarch.rpm
 
 RUN yum -y install python-setuptools; yum clean all
 RUN easy_install pip
